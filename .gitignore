@@ -1,0 +1,10 @@
+build/
+cmake-build-*/
+.vs/
+node_modules/
+Debug/
+Release/
+*.obj
+*.pdb
+*.ilk
+*.log
