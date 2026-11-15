@@ -17,9 +17,9 @@ Expected plugin bundle: `build\IRONCRUSH_artefacts\Release\VST3\IRONCRUSH.vst3`.
 
 Copy the entire `.vst3` folder to `C:\Program Files\Common Files\VST3\` and rescan plugins in your DAW. You may need administrator privileges to copy there.
 
-## Build without installing developer tools
+## Build with GitHub Actions
 
-Create a GitHub repository, upload all files including `.github/workflows/windows-vst3.yml`, then select **Actions → Build Windows VST3 → Run workflow**. Download the `IRONCRUSH-Windows-VST3` artifact after it completes. GitHub-hosted Windows runners compile the plugin.
+The repository-root workflow at `.github/workflows/main.yml` builds the plugin on GitHub-hosted Windows runners. It runs for pushes and pull requests targeting `main`, and can also be started manually from **Actions → Build Windows VST3 → Run workflow**. Download the `IRONCRUSH-Windows-VST3` artifact after a successful run.
 
 ## Signal chain
 
